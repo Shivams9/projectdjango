@@ -59,7 +59,7 @@ def edit(request):
     return render(request, 'edit.html', {'protrainys': protrainy})
 
 
-`
+
 def login(request):
     user_name=""
     user_password=""
@@ -82,11 +82,11 @@ def login(request):
                 return redirect(read)
             if user_type=="Security":
                 return redirect(read)
-            if user_type=="User":
-                return redirect(read)
+            # if user_type=="User":
+            #     return redirect(read)
         # opt=request.GET['option']
 
-    return render(request,"login.html",{'user_name': user_name,'user_password': user_password})`
+    return render(request,"login.html",{'user_name': user_name,'user_password': user_password})
 
 
 # def login(request):
